@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Zombie Game</h1>
+    <h2>Can You Defeat the Zombie?</h2>
+    <div class="container">
+        <div class="box" id="userBox">
+            <h2>User</h2>
+            <p>Name: <span id="userName">Player 1</span></p>
+            <p>Life: <span id="userLife">100</span></p>
+            <p>Level: <span id="userLevel">1</span></p>
+            <p>XP: <span id="userXP">0</span>/100</p>
+            <p>Potions: <span id="userPotions">3</span></p>
+            <p>Combo Strikes: <span id="comboCount">0</span></p>
+            <button onclick="userAttack()">Attack Zombie</button>
+            <button onclick="userHeal()">Heal</button>
+            <button onclick="usePotion()">Use Potion</button>
+            <button onclick="specialAttack()">Special Attack</button>
+            <button onclick="comboAttack()">Combo Attack</button>
+        </div>
+    
+        <div class="box" id="zombieBox">
+            <h2>Zombie</h2>
+            <p>Name: <span id="zombieName">Zombie</span></p>
+            <p>Life: <span id="zombieLife">150</span></p>
+            <p>Type: <span id="zombieType">Tank</span></p>
+            <button onclick="zombieAttack()">Attack User</button>
+        </div>
+    </div>
+    
+    <div class="log" id="log"></div>
+</body>
+</html>
